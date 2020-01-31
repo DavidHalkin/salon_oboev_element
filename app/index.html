@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>#</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="https://salon-oboev.ru/css/styles.css" />
+		<link rel="stylesheet" type="text/css" href="https://salon-oboev.ru/css/adaptive.css" />
+		<link rel="stylesheet" type="text/css" href="css/libs.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/all.css" />
+	</head>
+	<body>
+		<a data-fancybox="" data-src="#trueModal" data-modal="false" href="javascript:;" class="">Open modal 1</a>
+		<a data-fancybox="" data-src="#trueModal_2" data-modal="false" href="javascript:;" class="">Open modal 2</a>
+		<div id="trueModal" class="lightbox" style="display: none;">
+			<div class="top_info">
+				<img src="images/reg.jpg" alt="" class="img-fluid">
+			</div>
+			<div class="lightbox_body">
+				<div class="form_group">
+					<input type="text" placeholder="Введите ваше имя" class="form_control" id="val1">
+				</div>
+				<div class="form_group">
+					<input type="text" placeholder="Введите ваш телефон" class="form_control" id="val2">
+				</div>
+				<p>Нажимая кнопку «Хочу скидку» вы соглашаетесь <a href="#" class="solid_link">с условиями обработки персональных данных</a></p>
+				<button data-fancybox-close class="minw_190 btn_danger mb_20">Хочу скидку</button>
+				<p>Скидку по купону вы можете получить  в нашем шоу-руме Станция «Фрунзенская», Фрунзенская набережная д.30 в течение  10 дней</p>
+				<a href="#" class="dotted_link toogle_link_js fz_16">Условия использования</a>
+				<p class="fz_12 pb_0 mt_10 toogle_block_js" style="display: none;">Скидка не распространяется на обои: Arthouse, AS Creation, Aura, BN International, Chelsea Decor Wallpapers, Eco Wallpaper, Erisman Grandeco, Harlequin, Lincrusta, Limonta, Lutece, Marburg, Mirris & Co, Mr Perswall, OVK Design, Rasch, Sanderson, Scion, Sirpi, Ugepa, York, Zambaiti, Zoffany</p>
+			</div>
+		</div>
+		<div id="trueModal_2" class="lightbox lightbox_sale" style="display: none;">
+			<div class="lightbox_body text_center">
+				<h2>10% скидка</h2>
+				<h3>Покажите этот купон менеджеру в шоу-руме на Фрунзенской 30</h3>
+				<div class="code_block text_center">
+					1543578
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(".toogle_link_js").click(function(){
+					$(".toogle_block_js").slideToggle("fast");
+					return false;
+				});
+			});
+		</script>
+	</body>
+</html>

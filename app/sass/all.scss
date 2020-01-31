@@ -1,0 +1,142 @@
+@import '_param';
+
+.img-fluid{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.lightbox{
+	max-width: 360px;
+	width: 100%;
+	padding: 0;
+	font-family: 'Circe' !important;
+	color: rgba(255, 255, 255, 0.8);
+	.fancybox-close-small{
+		display: none !important;
+	}
+	a{
+		color: rgba(255, 255, 255, 0.8);
+	}
+	.lightbox_body{
+		padding: 30px 16px 60px;
+		background: #222425;
+	}
+	p{
+		font-size: 16px;
+		line-height: 26px;
+		margin-bottom: 0;
+		padding-bottom: 20px;
+	}
+	h2{
+		font:36px/38px 'CeraStencilPRO' !important;
+	}
+	h3{
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0;
+		padding: 0 0 15px 0;
+		font-weight: normal;
+	}
+	&.lightbox_sale{
+		width: 328px;
+		color: #000;
+		border-radius: 12px !important;
+		background: url(../images/bg_sale.png) no-repeat;
+		background-size: cover;
+		.lightbox_body{
+			background: none;
+			padding: 40px 119px 10px 16px;
+			padding: 40px 94px 10px 16px;
+		}
+	}
+}
+.text_center{
+	text-align: center !important;
+}
+.mb_20{
+	margin-bottom: 20px;
+}
+.dotted_link{
+	border-bottom: 2px dotted #464748;
+	&:hover{
+		border-color: transparent;
+	}
+}
+.solid_link{
+	border-bottom: 1px solid #464748;
+	&:hover{
+		border-color: transparent;
+	}
+}
+.form_group{
+	margin-bottom: 20px;
+}
+.fz_12{
+	font-size: 12px !important;
+	line-height: 18px !important;
+}
+.fz_16{
+	font-size: 16px !important;
+	line-height: 20px !important;
+}
+.pb_0{
+	padding-bottom: 0 !important;
+}
+.mt_10{
+	margin-top: 10px !important;
+}
+.form_control{
+	background: #514E50;
+	border-radius: 2px;
+	height: 46px;
+	padding: 5px 20px;
+	display: block;
+	width: 100%;
+	color: #fff;
+	outline: none;
+	font:16px/18px 'Circe' !important;
+	@include placeholder_custom {
+		color: #fff;
+		opacity: 1;
+	}
+}
+.minw_190{
+	min-width: 190px;
+}
+.btn_danger{
+	cursor: pointer;
+	display: inline-block;
+	padding: 10px 12px;
+	border: 0;
+	background: #FF224C;
+	border-radius: 2px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #fff;
+	text-align: center;
+	&:hover{
+		background: darken(#FF224C,5%);
+	}
+}
+.fancybox-close-small{
+	color: red !important;
+	opacity: 1;
+	padding: 5px !important;
+	background: #fff;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #FF224C;
+}
+.code_block{
+	height: 40px;
+	width: 100%;
+	border: 2px solid #888;
+	border-radius: 2px;
+	font-size: 16px;
+	line-height: 18px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	color: #000;
+}

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'CeraStencilPRO';
+    src: url('../fonts/CeraStencilPRO-Black.eot');
+    src: url('../fonts/CeraStencilPRO-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/CeraStencilPRO-Black.woff2') format('woff2'),
+        url('../fonts/CeraStencilPRO-Black.woff') format('woff'),
+        url('../fonts/CeraStencilPRO-Black.ttf') format('truetype'),
+        url('../fonts/CeraStencilPRO-Black.svg#CeraStencilPRO-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Circe';
+    src: url('../fonts/Circe-Regular.eot');
+    src: url('../fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Circe-Regular.woff2') format('woff2'),
+        url('../fonts/Circe-Regular.woff') format('woff'),
+        url('../fonts/Circe-Regular.ttf') format('truetype'),
+        url('../fonts/Circe-Regular.svg#Circe-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// The Mixin 
+@mixin placeholder_custom{
+	&:-ms-input-placeholder {
+		@content
+	}
+	&::-moz-placeholder {
+		@content
+	}
+	&::-webkit-input-placeholder {
+		@content
+	}
+}
+
